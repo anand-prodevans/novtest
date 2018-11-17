@@ -23,7 +23,7 @@ public class DriverLaunch {
 				System.out.println("Selected browser is Chrome");
 				detectOS();
 				ChromeOptions chromeoptions= new ChromeOptions();
-				//chromeoptions.addArguments("headless");
+				chromeoptions.addArguments("headless");
 				driver = new ChromeDriver(chromeoptions);
 			} else if (browser.equalsIgnoreCase("IE")) {
 				System.out.println("Selected browser is Internet Explorer");
